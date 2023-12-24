@@ -1,0 +1,240 @@
+body {
+    background-image: url("images/background.jpg");
+    margin: 0px;
+}
+*{
+    border-radius: 1%;
+}
+/* Header */
+
+.head {
+    margin-top: 60px;
+}
+
+/* nav bar */
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: #eee9e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    float: left;
+    filter: drop-shadow(2px 2px 4px gray);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    filter: drop-shadow(2px 2px 4px gray);
+}
+
+.navbar .logo {
+    font-size: 25px;
+}
+
+.navbar .right {
+    float: right;
+}
+
+.navbar .logo {
+    filter: drop-shadow(2px 2px 4px gray);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Bar */
+.search-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 2px solid #555;
+}
+.search-icon {
+    position: absolute;
+    top: 15px;
+    width: 40px;
+    height: 41px;
+    border: 1px rgb(78, 76, 76) solid; 
+}
+/* Banner */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Body */
+.body {
+    height: fit-content;
+    border: 1px solid black;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.body .left-content{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    float: left;
+}
+
+.body .left-content .category{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    border-radius: 10%;
+}
+
+.body .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-container a .product{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border: 1px black solid;
+    border-radius: 5%;
+    text-align: justify;
+    background-image: url("/web/images/testImage.jpg");
+    background-size: contain;
+    text-decoration: none;
+    color: #000000;
+}
+
+.product-container a :hover{
+    transform: scale(1.1);
+    filter: drop-shadow(4px 4px 8px rgb(64, 56, 99));
+    text-shadow: 2px 2px 2px gray;
+}
+
+/* Footer */
+footer {
+    background-color: #6b6969;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+    filter: drop-shadow(0.5px 0.5px 2px black);
+}
+
+.bottom-footer {
+    background-color: #6b6969;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer .middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.bottom-footer a:hover {
+    color: #ccc;
+}
+
+footer .bottom{
+    text-align: center;
+}
