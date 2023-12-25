@@ -57,15 +57,23 @@ body {
 
 /* Search Bar */
 .search-container {
-    width: 300px;
+    width: 410px;
+    padding: 0;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .search-bar {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
+    border: 0;
+    border-right: 1px solid black;
 }
 
 .search-bar:focus {
@@ -73,11 +81,12 @@ body {
     border: 2px solid #555;
 }
 .search-icon {
-    position: absolute;
-    top: 15px;
-    width: 40px;
     height: 41px;
-    border: 1px rgb(78, 76, 76) solid; 
+    width: 41px;
+}
+.search-container a{
+    text-decoration: none;
+    padding: 0px;
 }
 /* Banner */
 /* Slideshow container */
@@ -94,28 +103,6 @@ body {
     display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
