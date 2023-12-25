@@ -132,10 +132,9 @@ body {
 
 /* Body */
 .body {
-    height: 100vh;
+    height: 140vh;
     border: 1px solid black;
     text-align: center;
-    overflow: scroll;
     box-shadow: 4px 4px 4px gray;
 }
 
@@ -175,6 +174,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: scroll;
 }
 .product-category{
     display: flex;
