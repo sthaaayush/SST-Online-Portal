@@ -1,0 +1,280 @@
+body {
+    background-image: url("images/background.jpg");
+    margin: 0px;
+}
+
+* {
+    border-radius: 1%;
+}
+
+* a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.head {
+    margin-top: 60px;
+}
+
+/* nav bar */
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: #eee9e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    float: left;
+    filter: drop-shadow(2px 2px 4px gray);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    filter: drop-shadow(2px 2px 4px gray);
+}
+
+.navbar .logo {
+    font-size: 25px;
+}
+
+.navbar .right {
+    float: right;
+}
+
+.navbar .logo {
+    filter: drop-shadow(2px 2px 4px gray);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Bar */
+.search-container {
+    width: 410px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.search-bar {
+    width: 90%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 0;
+    border-right: 1px solid black;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 2px solid #555;
+}
+
+.search-icon {
+    height: 41px;
+    width: 41px;
+}
+
+.search-container a {
+    text-decoration: none;
+    padding: 0px;
+}
+
+/* Banner */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Body */
+.body {
+    height: 100vh;
+    border: 1px solid black;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.left-content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 40%;
+}
+
+.body .left-content1 {
+    width: 80%;
+    height: fit-content;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.body .left-content2 {
+    width: 80%;
+    height: fit-content;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.body .left-content .category {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    border-radius: 10%;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    border: 0;
+    overflow: scroll;
+    height: 18em;
+}
+
+.product-category legend{
+    border-bottom: 3px solid rgb(230, 50, 50);
+    width: 100%;
+    padding: 5px;
+}
+
+.total-product {
+    padding: 2px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+}
+
+.product-info a {
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+
+.total-product :hover {
+    transform: scale(1.0);
+    filter: drop-shadow(4px 4px 8px rgb(64, 56, 99));
+    text-shadow: 2px 2px 2px gray;
+}
+
+.product-clickable .product-image {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-image img {
+    height: 200px;
+    width: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #6b6969;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+    filter: drop-shadow(0.5px 0.5px 2px black);
+}
+
+.bottom-footer {
+    background-color: #6b6969;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer .middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.bottom-footer a:hover {
+    color: #ccc;
+}
+
+footer .bottom {
+    text-align: center;
+}
