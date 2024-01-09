@@ -113,6 +113,12 @@ body {
 }
 
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 /* Fading animation */
 .fade {
@@ -132,9 +138,10 @@ body {
 
 /* Body */
 .body {
-    height: 140vh;
+    height: 110vh;
     border: 1px solid black;
     text-align: center;
+    overflow: scroll;
     box-shadow: 4px 4px 4px gray;
 }
 
@@ -173,23 +180,7 @@ body {
 .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    overflow: scroll;
-}
-.product-category{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90%;
-    border: 0;
-    overflow: scroll;
-    height: 18em;
-}
-
-.product-category legend{
-    border-bottom: 3px solid rgb(230, 50, 50);
-    width: 100%;
-    padding: 5px;
+    justify-content: space-around;
 }
 
 .total-product {
@@ -199,21 +190,29 @@ body {
 }
 
 .product-info {
-    height: fit-content;
-    width: 100%;
-    text-align: center;
+    height: 50px;
+    width: 200px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: justify;
     text-decoration: none;
     color: #000000;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.product-info a {
-    font-weight: 900;
-    color: black;
-    text-align: center;
+.product-image :hover {
+    transform: scale(1.1);
+    filter: drop-shadow(4px 4px 8px rgb(64, 56, 99));
+    text-shadow: 2px 2px 2px gray;
 }
 
-.total-product :hover {
+.add-cart {
+    font-weight: 900
+}
+
+.add-cart :hover {
     transform: scale(1.0);
     filter: drop-shadow(4px 4px 8px rgb(64, 56, 99));
     text-shadow: 2px 2px 2px gray;
