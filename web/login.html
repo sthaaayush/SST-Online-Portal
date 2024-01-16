@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
- <link rel="stylesheet" type="text/css" href="styleSheet/login.css">
-</head>
-<body>
- <div class="login-container">
-    <h2>Login</h2>
-    <form id="login-form">
-      <div class="input-field">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="input-field">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
- </div>
 
- <script src="styleSheet/login.js"></script>
+<head>
+  <link rel="stylesheet" type="text/css" href="styleSheet/login.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="checkbox" id="remember" name="remember" value="remember">
+        Remember me
+        <br><br>
+        <a href="#">Forgot password?</a>
+        <br><br>
+        <input type="submit" value="Login">
+        <br><br>
+        <button onclick="window.location.href='signup.html'" class="signup">Sign Up</button>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
