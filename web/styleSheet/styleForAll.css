@@ -26,7 +26,6 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 2;
     float: left;
     filter: drop-shadow(2px 2px 4px gray);
 }

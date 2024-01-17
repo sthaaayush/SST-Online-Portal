@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styleSheet/login.css">
+  <link rel="stylesheet" href="styleSheet/styleForAll.css" type="text/css">
+  <link rel="icon" href="./images/logo1.png" type="image/png">
+  <title>Login</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html" class="logo"><img src="./images/logo1.png" alt="SST" height="45px" width="45px">Subha
+      Shree Traders
+    </a>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input class="search-bar" type="text" placeholder="Search For Products...">
+      <a href="product-preview-page.html"><img class="search-icon" src="./images/searchIcon.gif" alt="Search icon"></a>
+    </div>
+    <div class="right">
+      <a href="index.html">Home</a>
+      <a href="#faq">FAQ</a>
+      <a href="#mycart">My Cart</a>
+      <a href="login-page.html">Login</a>
+      <a href="signup-page.html">Register</a>
+    </div>
+  </div><br>
+  <div class="container">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br>
+        <input type="password" id="password" name="password" required placeholder="Punch your password">
+        <br>
+        <input type="checkbox" id="remember" name="remember" value="remember">
+        Remember me
+        <br><br>
+        <a href="#">Forgot password?</a>
+        <br><br>
+        <input type="submit" value="Login">
+        <br><br>
+        <button onclick="window.location.href='signup-page.html'" class="signup">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

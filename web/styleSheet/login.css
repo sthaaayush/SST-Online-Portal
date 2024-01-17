@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(/web/images/background.jpg);
+    display: grid;
+    justify-items: center;
+    align-content: space-around;
 }
 
 .container {
