@@ -16,6 +16,8 @@ body {
     box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
     border-right: gray 2px solid;
     border-bottom: gray 2px solid;
+    border-top:rgb(206, 202, 202) solid 2px ;
+    border-left:rgb(206, 202, 202) solid 2px ;
 }
 
 #signup-container input {
